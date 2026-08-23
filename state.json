@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://eventhub.rahulshettyacademy.com",
+      "localStorage": [
+        {
+          "name": "eventhub_token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQzMDgxLCJlbWFpbCI6InFhdXNlcjVAeW9wbWFpbC5jb20iLCJpYXQiOjE3ODc0MjI4MDQsImV4cCI6MTc4ODAyNzYwNH0.qTZ1RNIxVJACwNhjwOdeyHGi5g42RC5MLkemBWpVJhY"
+        }
+      ]
+    }
+  ]
+}
