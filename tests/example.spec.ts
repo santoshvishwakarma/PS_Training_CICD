@@ -2,8 +2,12 @@ import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
-
-  // Expect a title "to contain" a substring.
+  await page.getByAltText('Playwright logo').click();
+  await page.getByLabel('Search').click();
+  await page.getByPlaceholder('Search').click();
+  await page.getByText('Playwright').click();
+  const href = await page.getAttribute('a', 'href');
+  await page.getByRole('link', { name: 'Playwright' }).click();
   await expect(page).toHaveTitle(/Playwright/);
 });
 

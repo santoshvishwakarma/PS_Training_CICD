@@ -1,0 +1,134 @@
+{
+    "transactionId": "tx_9876543210_abc",
+    "timestamp": "2026-08-24T21:44:00Z",
+    "version": 2.4,
+    "isActive": true,
+    "metadata": {
+        "environment": "production",
+        "serverNode": "us-east-cluster-04",
+        "apiGateway": {
+            "provider": "AWS API Gateway",
+            "routingRule": "geo-closest",
+            "timeoutMs": 5000
+        },
+        "tags": [
+            "e-commerce",
+            "v3-migration",
+            "priority-high"
+        ]
+    },
+    "customer": {
+        "id": "usr_4f89a2bc",
+        "name": "Alex Mercer",
+        "email": "alex.mercer@example.com",
+        "vipStatus": false,
+        "accountCreated": "2024-02-12",
+        "contact": {
+            "primaryPhone": "+1-555-0199",
+            "secondaryPhone": null,
+            "preferences": {
+                "allowMarketingEmails": true,
+                "smsNotifications": false,
+                "preferredLanguage": "en-US"
+            }
+        },
+        "addresses": [
+            {
+                "type": "billing",
+                "isDefault": true,
+                "street": "123 Innovation Way",
+                "suite": "Building 4B",
+                "city": "Austin",
+                "state": "TX",
+                "postalCode": "78701",
+                "coordinates": {
+                    "latitude": 30.2672,
+                    "longitude": -97.7431
+                }
+            },
+            {
+                "type": "shipping",
+                "isDefault": false,
+                "street": "789 Logistics Blvd",
+                "suite": "Dock 12",
+                "city": "Louisville",
+                "state": "KY",
+                "postalCode": "40201",
+                "coordinates": {
+                    "latitude": 38.2527,
+                    "longitude": -85.7585
+                }
+            }
+        ]
+    },
+    "cart": {
+        "id": "cart_88321",
+        "currency": "USD",
+        "summary": {
+            "subtotal": 1250.45,
+            "taxTotal": 103.16,
+            "shippingCost": 0.00,
+            "discountTotal": 50.00,
+            "grandTotal": 1303.61
+        },
+        "items": [
+            {
+                "productId": "prod_ultra_4k",
+                "sku": "TV-4K-65-G3",
+                "name": "65\" Ultra HD 4K Smart TV",
+                "quantity": 1,
+                "unitPrice": 899.99,
+                "isTaxable": true,
+                "dimensions": {
+                    "weightLbs": 42.5,
+                    "box": {
+                        "width": 60.2,
+                        "height": 35.0,
+                        "depth": 7.1
+                    }
+                },
+                "appliedDiscounts": [
+                    {
+                        "code": "SUMMERTECH",
+                        "type": "percentage",
+                        "value": 5.0,
+                        "amountSaved": 45.00
+                    }
+                ]
+            },
+            {
+                "productId": "prod_audio_bar",
+                "sku": "SB-31-DOLBY",
+                "name": "3.1 Channel Soundbar with Wireless Subwoofer",
+                "quantity": 2,
+                "unitPrice": 175.23,
+                "isTaxable": true,
+                "dimensions": {
+                    "weightLbs": 18.2,
+                    "box": {
+                        "width": 40.0,
+                        "height": 12.0,
+                        "depth": 10.5
+                    }
+                },
+                "appliedDiscounts": [
+                    {
+                        "code": "BUNDLEAUDIO",
+                        "type": "fixed_amount",
+                        "value": 5.0,
+                        "amountSaved": 5.00
+                    }
+                ]
+            }
+        ]
+    },
+    "security": {
+        "encryption": "AES-256-GCM",
+        "signature": "0x7f8ba901cd34ef567890abcdef1234567890abcdef1234567890abcdef1234",
+        "authorizedRoles": [
+            "admin",
+            "checkout-service",
+            "audit-logger"
+        ]
+    }
+}

@@ -13,5 +13,8 @@
     "@azure/playwright": "^1.1.6",
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.2.0"
+  },
+  "dependencies": {
+    "tsx": "^4.23.12"
   }
 }
